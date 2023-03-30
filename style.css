@@ -1,0 +1,129 @@
+/* CSS pour le document HTML */
+p {
+    font-family: serif;
+    font-size: 1.1em;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    color: #333333;
+}
+body {
+    width: 90%;
+    margin: auto;
+    font-size: 160%;
+    background-color: aquamarine;
+    background-image: url("https://mobimg.b-cdn.net/v3/fetch/c4/c4add5d9f66bb7472d2bf7a86a726d55.jpeg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: cover;
+
+}
+
+q, blockquote {
+    max-width: 50%;
+    font-size: 160%;
+    background-color: #f2f2f2;
+    padding-left: 30px;
+    margin: 80px 0;
+    font-style: italic;
+
+}
+
+a {
+    color: #ec1111; 
+    border-bottom: 1px solid #0c0c06; 
+
+}
+a:visited {
+    color: darkgreen;
+}  
+  
+a:hover {
+    color: rgb(29, 4, 99)
+}
+
+.bad, .good {
+    text-transform: uppercase;
+}
+q.bad, blockquote.bad {
+    border-left: 3px solid red;
+}
+  
+q.good, blockquote.good {
+    border-left: 3px solid blue;
+}
+
+q.villager {
+    border-left: 3px solid red;
+}
+  
+q.farmer {
+    border-left: 3px solid blue;
+}
+header > h1 {
+    background-color: yellow;
+}
+p:contains('good') {
+    text-transform: capitalize;
+}
+  
+p:contains('bad') {
+    text-transform: capitalize;
+    color: red;
+}
+
+
+p:contains('Good') {
+    color: green;
+}
+  
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+  
+table td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+p:first-child {
+    font-weight: bold;
+}
+
+/* CSS pour les images dans la liste */
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.image-class {
+    float: right;
+    margin-right: 20px;
+}
+
+.text-container {
+    flex-grow: 1;
+}
+
+.notification{
+    background:#FFFFDD;
+    padding:.5rem 1rem;
+    border:3px solid #DDDDCC;
+    width:250px;
+    font-weight:bold;
+    color: #333300;
+    
+  }
